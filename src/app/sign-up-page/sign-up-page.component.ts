@@ -49,6 +49,7 @@ export class SignUpPageComponent implements OnInit {
 
   signUpCancel = () => {
     this.router.navigate(['/auth']);
+    console.log('cancel');
   }
 
 }
