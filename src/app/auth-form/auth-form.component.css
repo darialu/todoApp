@@ -1,0 +1,29 @@
+.form-control {
+    /* background-color: aquamarine; */
+    width: 350px;
+    margin: 0 auto;
+}
+.formArea {
+    /* background-color: blueviolet; */
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form-group{
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.authSubmitArea {
+    margin-top: 20px;
+}
+
+.authFormBtn {
+    margin-right: 5px;
+}
+
+.authAlert {
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 15px;
+}

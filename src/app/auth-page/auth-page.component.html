@@ -1,0 +1,20 @@
+<div>
+  <div [hidden]='signUpClicked'>
+    <p>Please, Login or 
+    <a routerLink="/signUp" (click)='signInHandler()'>
+      Sign up
+    </a></p>
+    <p>(or input email: andy_wallcroft@mail.uk password: 12345)</p>
+  </div>
+
+  <p [hidden]='!signUpClicked'>
+    Please, enter your email and password:
+  </p>
+
+  <app-auth-form 
+    [signUpClicked]="signUpClicked"
+    [buttonName]="buttonName"
+    [formSubmit]='formSubmit'
+    [unauthorized]='unauthorized'>
+  </app-auth-form>
+</div>

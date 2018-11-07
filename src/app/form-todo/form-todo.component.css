@@ -1,0 +1,22 @@
+
+.formLabel {
+    color: rgba(255, 255, 255, 0.911);
+}
+
+.inputTodo {
+    background-color: rgba(255, 255, 255, 0.878);
+}
+
+.formBtn {
+    background-color: rgba(255, 255, 255, 0.878);
+    margin-right: 10px;
+}
+
+/* 
+.ng-valid[required], .ng-valid.required {
+    border-left: 5px solid rgba(0, 128, 0, 0.618);
+}
+
+.ng-invalid:not(form) {
+    border-left: 5px solid rgba(255, 0, 0, 0.598);
+} */

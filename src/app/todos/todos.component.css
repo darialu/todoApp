@@ -1,0 +1,38 @@
+.container {
+    /* background-color: black; */
+    padding-top: 40px;
+    overflow: hidden;
+    color: rgb(218, 217, 217);
+    text-align: center;
+    font-size: 20px;
+}
+
+.list-group-item {
+    margin: 0 auto;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.803);
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.563);
+}
+
+.done {
+    background-color: rgba(35, 70, 30, 0.68);
+    border: none;
+}
+
+.done:hover {
+    background-color: rgba(35, 70, 30, 0.783);
+    cursor: pointer;
+}
+
+.deleteBtn {
+    background-color: rgba(99, 34, 59, 0.693);
+    border: none;
+}
+
+.deleteBtn:hover {
+    background-color: rgba(99, 34, 59, 0.878);
+    border: none;
+}

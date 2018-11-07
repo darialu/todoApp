@@ -1,0 +1,15 @@
+<form #TodoForm='ngForm'>
+  <div>
+    <!-- {{newTodo.name}} -->
+    <!-- {{newTodo.id}} -->
+    <div class="form-group">
+      <label class="formLabel" for='newTodo'>What do you need to do? </label>
+      <input id="newTodo" #hiddenAlert='ngModel' [(ngModel)]="newTodo.name" name="newTodo" class="form-control form-control-lg inputTodo" required type="text" placeholder="I need to ...">
+    </div>
+    <div class="alert alert-danger" [hidden]='hiddenAlert.valid || hiddenAlert.pristine'>
+      oooops, the field can not be empty ...
+    </div>
+    <button class="btn formBtn" (click)="closeModal('custom-modal-1'); submited(); TodoForm.reset()" [disabled]='!TodoForm.form.valid'>Submit</button>
+    <button (click)="closeModal('custom-modal-1');" class="btn formBtn">Close</button>
+  </div>
+</form>

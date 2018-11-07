@@ -1,0 +1,14 @@
+<div>
+
+    <p>
+      Please, enter your email and password:
+    </p>
+  
+    <app-auth-form 
+      [signUpClicked]="signUpClicked"
+      [buttonName]="buttonName"
+      [formSubmit]='signUpSubmit'
+      [signedUpError]='signedUpError'
+      [signUpCancel]='signUpCancel'>
+    </app-auth-form>
+  </div>

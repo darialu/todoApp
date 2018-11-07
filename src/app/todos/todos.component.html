@@ -1,0 +1,21 @@
+<div class="container">
+  <ul class="list-group">
+    <li  *ngFor="let todo of todosList"
+    class="list-group-item d-flex justify-content-between align-items-center">
+      <!-- {{todo.name}} -->
+      <!-- <button type="button" class="btn btn-secondary btn-sm done">done!</button> -->
+      {{todo.name}}     
+      <button 
+        type="button" 
+        class="btn btn-secondary btn-sm deleteBtn"
+        (click)='deleteButtonHandler(todo)'>
+          delete
+      </button>
+      
+    </li>
+  </ul>
+  <!-- <span class="glyphicon glyphicon-search"></span> -->
+</div>
+
+
+
