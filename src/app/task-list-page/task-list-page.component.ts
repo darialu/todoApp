@@ -28,7 +28,10 @@ export class TaskListPageComponent implements OnInit {
     // console.log('parents fun ', task);
     this.todosService
       .postTodo(task)
-      .subscribe(todo => this.todos.push(todo));
+      .subscribe(todo => {
+        console.log('new todo', todo);
+        this.todos.push(todo)
+      });
   }
 
   deleteTask = task => {

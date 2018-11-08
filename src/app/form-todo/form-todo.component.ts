@@ -36,7 +36,7 @@ export class FormTodoComponent implements OnInit {
     console.log('subm work')
     this.formSubmited = true;
     this.formSubmit(this.newTodo);
-    this.newTodo = new TodoItem;
+    // this.newTodo = new TodoItem;
     // this.todosService.postTodos(this.newTodo);
   }
 
