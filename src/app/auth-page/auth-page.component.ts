@@ -18,14 +18,15 @@ export class AuthPageComponent implements OnInit {
     private authService: AuthService,
     private router: Router
   ) { 
-    if (localStorage.token != '' || localStorage.token) {
-      this.router.navigate(['/todosList']);
-    }
+
   }
 
   ngOnInit() {
     this.signUpClicked = false;
     this.unauthorized = false;
+    if (localStorage.token) {
+      this.router.navigate(['/todosList']);
+    }
   }
 
   formSubmit = userInfo => {

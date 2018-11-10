@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ModalService } from '../_services/modal.service';
 import { TodosService } from '../_services/todos.service';
 import { TodoItem } from '../todoItem';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-task-list-page',
@@ -15,13 +16,18 @@ export class TaskListPageComponent implements OnInit {
 
   constructor(
     private modalService: ModalService,
-    public todosService: TodosService) {
+    public todosService: TodosService,
+    private router: Router) {
       todosService
       .getTodos(localStorage.userId)
       .subscribe(todos => this.todos = todos);
+
     }
 
   ngOnInit() {
+    if(!localStorage.token) {
+      this.router.navigate(['/auth']);
+    }
   }
 
   getDataFromForm = (task) => {

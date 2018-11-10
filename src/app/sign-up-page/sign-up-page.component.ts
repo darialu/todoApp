@@ -17,14 +17,15 @@ export class SignUpPageComponent implements OnInit {
     private authService: AuthService,
     private router: Router
   ) { 
-    if (localStorage.token != '' || localStorage.token) {
-      this.router.navigate(['/todosList']);
-    }
+    
   }
 
   ngOnInit() {
     this.signUpClicked = true;
     this.signedUpError = false;
+    if (localStorage.token) {
+      this.router.navigate(['/todosList']);
+    }
   }
 
   signUpSubmit = userInfo => {
