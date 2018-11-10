@@ -25,9 +25,9 @@ export class TaskListPageComponent implements OnInit {
     }
 
   ngOnInit() {
-    if(!localStorage.token) {
-      this.router.navigate(['/auth']);
-    }
+    // if(!localStorage.token) {
+    //   this.router.navigate(['/auth']);
+    // }
   }
 
   getDataFromForm = (task) => {
