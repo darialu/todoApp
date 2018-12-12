@@ -1,6 +1,6 @@
 # TodoList
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+TODO-List is able to save and manage all your tasks in one place. In this application you can add, edit and delete tasks from your personal tasklist, but first of all you should sign in.
 
 ## Development server
 
